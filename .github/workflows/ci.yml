@@ -1,0 +1,21 @@
+name: Проверка игры
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Установить зависимости
+        run: npm install --no-audit --no-fund
+      - name: Проверка графики и карт
+        run: npm run check:assets
+      - name: Тестирование правил
+        run: npm test
+      - name: Сборка React-приложения
+        run: npm run build

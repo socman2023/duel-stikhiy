@@ -1,0 +1,30 @@
+{
+  "name": "duel-stikhiy",
+  "private": true,
+  "version": "0.5.2",
+  "type": "module",
+  "description": "Дуэль стихий — карточная игра Академии Светозара",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "build:engine": "tsc -p tsconfig.engine.json",
+    "test": "npm run build:engine && node --test test/*.test.mjs",
+    "check:assets": "node scripts/check-assets.mjs",
+    "verify": "npm run check:assets && npm run test && npm run build",
+    "publish:pages": "npm run build && node scripts/copy-dist-to-docs.mjs"
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.20",
+    "@types/react-dom": "18.3.6",
+    "typescript": "5.8.3",
+    "vite": "8.3.5"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

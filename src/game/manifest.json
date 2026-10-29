@@ -1,0 +1,571 @@
+{
+  "catalog_version": "0.3",
+  "source": {
+    "folder": "https://drive.google.com/drive/folders/1ON2PZLexVGqp9Z90_jhsg27DhMtOoeLp",
+    "rules": "ПРАВИЛА ИГРЫ базовая версия.pdf",
+    "printed_cards": "Карты.pdf",
+    "artwork": "Отдельные PNG по стихиям и персонажам"
+  },
+  "editorial_policy": "Имена и сила взяты из Карты.pdf; ранние названия не включены",
+  "image_policy": "Оригинальные изображения не перерисовывались; webp — уменьшенные копии без изменений сюжета",
+  "cards": [
+    {
+      "id": "F01",
+      "name": "Пламя Дарбога",
+      "element": "fire",
+      "power": 6,
+      "source_png": "огонь_1.png",
+      "image": "spells/F01.webp",
+      "thumbnail": "spells/F01_thumb.webp",
+      "source_sha256": "33124ff4e7531fae163a862e0e5410d5a7a0d8c50e18bf0737b16b8adfdaa53c"
+    },
+    {
+      "id": "F02",
+      "name": "Гнев Варуна",
+      "element": "fire",
+      "power": 5,
+      "source_png": "огонь_2.png",
+      "image": "spells/F02.webp",
+      "thumbnail": "spells/F02_thumb.webp",
+      "source_sha256": "73a00fd9ce3886a3c5e25c76388c829d8cdd4ec7ff6b36b20c5711fada42cfcb"
+    },
+    {
+      "id": "F03",
+      "name": "Луч Светозара",
+      "element": "fire",
+      "power": 5,
+      "source_png": "огонь_3.png",
+      "image": "spells/F03.webp",
+      "thumbnail": "spells/F03_thumb.webp",
+      "source_sha256": "8e24fd3a472bb327df04dedcf2830e3e3ceeada0e7e6abd6fcd35209a3a3465c"
+    },
+    {
+      "id": "F04",
+      "name": "Клинок Зари",
+      "element": "fire",
+      "power": 5,
+      "source_png": "огонь_4.png",
+      "image": "spells/F04.webp",
+      "thumbnail": "spells/F04_thumb.webp",
+      "source_sha256": "63ba6b80a7f8fe6c74d0375e72ef7619fc72cab6f11304b7b89c8d3b34c8f67d"
+    },
+    {
+      "id": "F05",
+      "name": "Дыхание Пламени",
+      "element": "fire",
+      "power": 4,
+      "source_png": "огонь_5.png",
+      "image": "spells/F05.webp",
+      "thumbnail": "spells/F05_thumb.webp",
+      "source_sha256": "e43a6ed9dc4cf87762f821b1d89851de4aa11cd8ef6fa037830d305060316524"
+    },
+    {
+      "id": "F06",
+      "name": "Молния Варока",
+      "element": "fire",
+      "power": 4,
+      "source_png": "огонь_6.png",
+      "image": "spells/F06.webp",
+      "thumbnail": "spells/F06_thumb.webp",
+      "source_sha256": "702bd029e8bdb4a77b6e6ed5d972e76caf928c083d706834d123c4ac222cf2c6"
+    },
+    {
+      "id": "F07",
+      "name": "Пепел Рода",
+      "element": "fire",
+      "power": 4,
+      "source_png": "огонь_7.png",
+      "image": "spells/F07.webp",
+      "thumbnail": "spells/F07_thumb.webp",
+      "source_sha256": "9219328b37df7ffb6a4e5f40a01b781067e101bf53af55126cd79029144e1a8a"
+    },
+    {
+      "id": "F08",
+      "name": "Жар Кузни",
+      "element": "fire",
+      "power": 3,
+      "source_png": "огонь_8.png",
+      "image": "spells/F08.webp",
+      "thumbnail": "spells/F08_thumb.webp",
+      "source_sha256": "7cf17cf0fa3c80d6ea805a7d55f5b55cb13e2c2855ae9397241c352f7969e1a1"
+    },
+    {
+      "id": "F09",
+      "name": "Пляска Очищения",
+      "element": "fire",
+      "power": 3,
+      "source_png": "огонь_9.png",
+      "image": "spells/F09.webp",
+      "thumbnail": "spells/F09_thumb.webp",
+      "source_sha256": "695601efd41bb4b6b7d99946bcf77ef00801f06e1d0472d68e8dfa8d5310b35e"
+    },
+    {
+      "id": "F10",
+      "name": "Свеча Мудреца",
+      "element": "fire",
+      "power": 3,
+      "source_png": "огонь_10.png",
+      "image": "spells/F10.webp",
+      "thumbnail": "spells/F10_thumb.webp",
+      "source_sha256": "a8c2765d1fb82e1e3b89b6c672e5b311f5e7f7bae9746f89b004e48d7c0ae0fb"
+    },
+    {
+      "id": "F11",
+      "name": "Уголь Судеб",
+      "element": "fire",
+      "power": 2,
+      "source_png": "огонь_11.png",
+      "image": "spells/F11.webp",
+      "thumbnail": "spells/F11_thumb.webp",
+      "source_sha256": "117eeac6bd26ca924dfba6dae56eac4909a9666b857ffe5fbafb4a8eb09cc145"
+    },
+    {
+      "id": "F12",
+      "name": "Искра Сердца",
+      "element": "fire",
+      "power": 2,
+      "source_png": "огонь_12.png",
+      "image": "spells/F12.webp",
+      "thumbnail": "spells/F12_thumb.webp",
+      "source_sha256": "34dacd9bd2e841cfd988b09f3e841b9ed5dc55fabc3df1bbb73c5d75cc5d1a38"
+    },
+    {
+      "id": "W01",
+      "name": "Холод Морены",
+      "element": "water",
+      "power": 6,
+      "source_png": "вода_1.png",
+      "image": "spells/W01.webp",
+      "thumbnail": "spells/W01_thumb.webp",
+      "source_sha256": "49b7ea71416e9815ff334837610e921d2356bdfc77bd1231bcde4790de8614e5"
+    },
+    {
+      "id": "W02",
+      "name": "Поток Спасителя",
+      "element": "water",
+      "power": 5,
+      "source_png": "вода_2.png",
+      "image": "spells/W02.webp",
+      "thumbnail": "spells/W02_thumb.webp",
+      "source_sha256": "1ad30a39396e6eb97c3e81e5499d851e5ff4799af9ae553071827cbdf63161c1"
+    },
+    {
+      "id": "W03",
+      "name": "Песнь Рек",
+      "element": "water",
+      "power": 5,
+      "source_png": "вода_3.png",
+      "image": "spells/W03.webp",
+      "thumbnail": "spells/W03_thumb.webp",
+      "source_sha256": "89483beb1203a1be80866466b8f29f44717fa877a9d5c50a20cb4f8baf9ab035"
+    },
+    {
+      "id": "W04",
+      "name": "Водоворот Забвения",
+      "element": "water",
+      "power": 5,
+      "source_png": "вода_4.png",
+      "image": "spells/W04.webp",
+      "thumbnail": "spells/W04_thumb.webp",
+      "source_sha256": "20ad6479de66f7dfe5b45c62e97862a1ba11f87a37d41ed9d64afef501b65dff"
+    },
+    {
+      "id": "W05",
+      "name": "Слезы Облаков",
+      "element": "water",
+      "power": 4,
+      "source_png": "вода_5.png",
+      "image": "spells/W05.webp",
+      "thumbnail": "spells/W05_thumb.webp",
+      "source_sha256": "846cd79443cf747e655c63ae334bcdb8b02acd4521dec21217495a611b5c40e9"
+    },
+    {
+      "id": "W06",
+      "name": "Волна Дарбога",
+      "element": "water",
+      "power": 4,
+      "source_png": "вода_6.png",
+      "image": "spells/W06.webp",
+      "thumbnail": "spells/W06_thumb.webp",
+      "source_sha256": "146c0a967cfb0ed9246d69880c8e684dcbc897c86bd3b03adf63244e9985f3b5"
+    },
+    {
+      "id": "W07",
+      "name": "Туман Моря",
+      "element": "water",
+      "power": 4,
+      "source_png": "вода_7.png",
+      "image": "spells/W07.webp",
+      "thumbnail": "spells/W07_thumb.webp",
+      "source_sha256": "ccb850a8f62de5ec5b32c1236de4aa6d2dbceca4511e836c6c8fe4c5ffb4e34d"
+    },
+    {
+      "id": "W08",
+      "name": "Источник Мира",
+      "element": "water",
+      "power": 3,
+      "source_png": "вода_8.png",
+      "image": "spells/W08.webp",
+      "thumbnail": "spells/W08_thumb.webp",
+      "source_sha256": "5ebf51b80f4bccfe7265a7c6f0bdf9d1e445d9dd2a7db456a9d7602ad8e5efc2"
+    },
+    {
+      "id": "W09",
+      "name": "Прилив Судеб",
+      "element": "water",
+      "power": 3,
+      "source_png": "вода_9.png",
+      "image": "spells/W09.webp",
+      "thumbnail": "spells/W09_thumb.webp",
+      "source_sha256": "7dcf21ac10a26c9536d4d70399fa0d247e13d897047731d89bd2b2b43c929c34"
+    },
+    {
+      "id": "W10",
+      "name": "Роса Мокуши",
+      "element": "water",
+      "power": 3,
+      "source_png": "вода_10.png",
+      "image": "spells/W10.webp",
+      "thumbnail": "spells/W10_thumb.webp",
+      "source_sha256": "9612fb2f2e9b051b26b9bcdcae9f35a6eae6f125b19ce4500aa543be99a845b7"
+    },
+    {
+      "id": "W11",
+      "name": "Дыхание Волны",
+      "element": "water",
+      "power": 2,
+      "source_png": "вода_11.png",
+      "image": "spells/W11.webp",
+      "thumbnail": "spells/W11_thumb.webp",
+      "source_sha256": "ab8f95fc23e4814d40471df19c185401e0e0c2caca259219a43d428517fe1975"
+    },
+    {
+      "id": "W12",
+      "name": "Капля Милосердия",
+      "element": "water",
+      "power": 2,
+      "source_png": "вода_12.png",
+      "image": "spells/W12.webp",
+      "thumbnail": "spells/W12_thumb.webp",
+      "source_sha256": "121b3264412b60a22c36169dd8d38aef2b8722021f91ca261ee040bfd3596e73"
+    },
+    {
+      "id": "A01",
+      "name": "Порыв Стрыя",
+      "element": "air",
+      "power": 6,
+      "source_png": "воздух_1.png",
+      "image": "spells/A01.webp",
+      "thumbnail": "spells/A01_thumb.webp",
+      "source_sha256": "27a6cb3a2e1f924d1a2094eba44e7e1edab000d63bc13a6f609655c53e97e987"
+    },
+    {
+      "id": "A02",
+      "name": "Крыло Яра",
+      "element": "air",
+      "power": 5,
+      "source_png": "воздух_2.png",
+      "image": "spells/A02.webp",
+      "thumbnail": "spells/A02_thumb.webp",
+      "source_sha256": "483f2aaa76753aeacbe3d3f9065337c1d416db022b0a938083a3856ca09445bb"
+    },
+    {
+      "id": "A03",
+      "name": "Шепот Небес",
+      "element": "air",
+      "power": 5,
+      "source_png": "воздух_3.png",
+      "image": "spells/A03.webp",
+      "thumbnail": "spells/A03_thumb.webp",
+      "source_sha256": "fbf56a0808ca41bc48316b403cf5c191a1d546f73f894b74d0477e9e66cc8606"
+    },
+    {
+      "id": "A04",
+      "name": "Танец Вихря",
+      "element": "air",
+      "power": 5,
+      "source_png": "воздух_4.png",
+      "image": "spells/A04.webp",
+      "thumbnail": "spells/A04_thumb.webp",
+      "source_sha256": "b9a75869ee66abb6a64a52cc0f700de6660cdfd900365d6ad52b58ff3abbd7e1"
+    },
+    {
+      "id": "A05",
+      "name": "Зов Неба",
+      "element": "air",
+      "power": 4,
+      "source_png": "воздух_5.png",
+      "image": "spells/A05.webp",
+      "thumbnail": "spells/A05_thumb.webp",
+      "source_sha256": "15da2df242e4e393cda03b54903fba5af90c0cf406b3476876b5758ae2561faf"
+    },
+    {
+      "id": "A06",
+      "name": "Струя Света",
+      "element": "air",
+      "power": 4,
+      "source_png": "воздух_6.png",
+      "image": "spells/A06.webp",
+      "thumbnail": "spells/A06_thumb.webp",
+      "source_sha256": "4cb90d0c44518aa226fff6602c269770fec2b6933933b835b7f510a19b7573ff"
+    },
+    {
+      "id": "A07",
+      "name": "Голос Шторма",
+      "element": "air",
+      "power": 4,
+      "source_png": "воздух_7.png",
+      "image": "spells/A07.webp",
+      "thumbnail": "spells/A07_thumb.webp",
+      "source_sha256": "0fe0b5ddd21bbef3aea57d0b2878930f37cd15cbfd74a85f124aea12d3664e81"
+    },
+    {
+      "id": "A08",
+      "name": "Дух Высоты",
+      "element": "air",
+      "power": 3,
+      "source_png": "воздух_8.png",
+      "image": "spells/A08.webp",
+      "thumbnail": "spells/A08_thumb.webp",
+      "source_sha256": "159e87da4a19f246a2c1282ee38178c1213cad000a256796dd9dd4496705db5b"
+    },
+    {
+      "id": "A09",
+      "name": "Пыль Путей",
+      "element": "air",
+      "power": 3,
+      "source_png": "воздух_9.png",
+      "image": "spells/A09.webp",
+      "thumbnail": "spells/A09_thumb.webp",
+      "source_sha256": "8b318ab8a8a26c6e4f2614b00e57c7f5047676fdaa2a79ac9b8d13286e31e5b2"
+    },
+    {
+      "id": "A10",
+      "name": "Лепет Листьев",
+      "element": "air",
+      "power": 3,
+      "source_png": "воздух_10.png",
+      "image": "spells/A10.webp",
+      "thumbnail": "spells/A10_thumb.webp",
+      "source_sha256": "61bd5fe4237a66056302778c0c01e0b46d0edf1c7529c40c8f6ae493cf98c25b"
+    },
+    {
+      "id": "A11",
+      "name": "Вздох Бури",
+      "element": "air",
+      "power": 2,
+      "source_png": "воздух_11.png",
+      "image": "spells/A11.webp",
+      "thumbnail": "spells/A11_thumb.webp",
+      "source_sha256": "b57afca7d444cc927fb92c19c4e647e2e86b78c369a672e368fe3995437d8885"
+    },
+    {
+      "id": "A12",
+      "name": "Песня Полета",
+      "element": "air",
+      "power": 2,
+      "source_png": "воздух_12.png",
+      "image": "spells/A12.webp",
+      "thumbnail": "spells/A12_thumb.webp",
+      "source_sha256": "b86ffee6d58118fde04288a22f310d9ff992567c6747c45e9113da2967aa953f"
+    },
+    {
+      "id": "E01",
+      "name": "Корни Мокуши",
+      "element": "earth",
+      "power": 6,
+      "source_png": "земля_1.png",
+      "image": "spells/E01.webp",
+      "thumbnail": "spells/E01_thumb.webp",
+      "source_sha256": "9ded5011a8fbe79be26d8f12882437c490cb7e107354f2478966b0a373b9597f"
+    },
+    {
+      "id": "E02",
+      "name": "Щит Варока",
+      "element": "earth",
+      "power": 5,
+      "source_png": "земля_2.png",
+      "image": "spells/E02.webp",
+      "thumbnail": "spells/E02_thumb.webp",
+      "source_sha256": "caa1d8a0e7174f6009a9ba80bc8933def67f2c14d97b13a74ec2f38492223c8f"
+    },
+    {
+      "id": "E03",
+      "name": "Глыба Дарбога",
+      "element": "earth",
+      "power": 5,
+      "source_png": "земля_3.png",
+      "image": "spells/E03.webp",
+      "thumbnail": "spells/E03_thumb.webp",
+      "source_sha256": "ae4ecf4054a4cfc0c0803a1d013393c33d38f7d972923b2e1baab7cad3ed487b"
+    },
+    {
+      "id": "E04",
+      "name": "Каменное Сердце",
+      "element": "earth",
+      "power": 5,
+      "source_png": "земля_4.png",
+      "image": "spells/E04.webp",
+      "thumbnail": "spells/E04_thumb.webp",
+      "source_sha256": "cf3c32f3d8b1f57a40f071a03723e4988f032438daeb4f9d7a46c2b63259f218"
+    },
+    {
+      "id": "E05",
+      "name": "Рука Великана",
+      "element": "earth",
+      "power": 4,
+      "source_png": "земля_5.png",
+      "image": "spells/E05.webp",
+      "thumbnail": "spells/E05_thumb.webp",
+      "source_sha256": "681bb7a1268cd59a200cfb7653c48b149b479af78bbf083be6be59da0791e1f9"
+    },
+    {
+      "id": "E06",
+      "name": "Жила Варуна",
+      "element": "earth",
+      "power": 4,
+      "source_png": "земля_6.png",
+      "image": "spells/E06.webp",
+      "thumbnail": "spells/E06_thumb.webp",
+      "source_sha256": "2555a5146aca0ade57e4572cd37dfe0ca24094941f997f682c3fe7f5a56ee9ed"
+    },
+    {
+      "id": "E07",
+      "name": "Оплот Россов",
+      "element": "earth",
+      "power": 4,
+      "source_png": "земля_7.png",
+      "image": "spells/E07.webp",
+      "thumbnail": "spells/E07_thumb.webp",
+      "source_sha256": "b86305e2040cbdb0dd62f98f053e37ed5a4d7afa5b0e7bfc4c0ac3e0dd1b6acd"
+    },
+    {
+      "id": "E08",
+      "name": "Каменная Твердь",
+      "element": "earth",
+      "power": 3,
+      "source_png": "земля_8.png",
+      "image": "spells/E08.webp",
+      "thumbnail": "spells/E08_thumb.webp",
+      "source_sha256": "0dbabc2b381707f2512cd4b21575a152606875a1ad5e2eeff6e6b54068091dad"
+    },
+    {
+      "id": "E09",
+      "name": "Пески Куштии",
+      "element": "earth",
+      "power": 3,
+      "source_png": "земля_9.png",
+      "image": "spells/E09.webp",
+      "thumbnail": "spells/E09_thumb.webp",
+      "source_sha256": "56d07f1d79241a6ff0e9bbd3321cd37ba7b8c48d27b50bee139ddefe09e3748a"
+    },
+    {
+      "id": "E10",
+      "name": "Семя Жизни",
+      "element": "earth",
+      "power": 3,
+      "source_png": "земля_10.png",
+      "image": "spells/E10.webp",
+      "thumbnail": "spells/E10_thumb.webp",
+      "source_sha256": "965af70f7b082d95d5d24f61c2c7c9b06893ad2643e2fb771cca034e740efc13"
+    },
+    {
+      "id": "E11",
+      "name": "Гул Пластов",
+      "element": "earth",
+      "power": 2,
+      "source_png": "земля_11.png",
+      "image": "spells/E11.webp",
+      "thumbnail": "spells/E11_thumb.webp",
+      "source_sha256": "05356dcd671b69b4da4d536d270ad0f8554a4e21c7a038f4cd31ea66a07e3d77"
+    },
+    {
+      "id": "E12",
+      "name": "Тропа Предков",
+      "element": "earth",
+      "power": 2,
+      "source_png": "земля_12.png",
+      "image": "spells/E12.webp",
+      "thumbnail": "spells/E12_thumb.webp",
+      "source_sha256": "edff0470897e9b32ea64f3c902bdd24ab63ed730e3fc9c2fd3fc757c545841ea"
+    }
+  ],
+  "students": [
+    {
+      "id": "oleshka",
+      "name": "Олешка",
+      "element": "air",
+      "source_png": "Oleshka.png",
+      "image": "heroes/Oleshka.webp",
+      "thumbnail": "heroes/Oleshka_thumb.webp"
+    },
+    {
+      "id": "yarko",
+      "name": "Ярко",
+      "element": "air",
+      "source_png": "Yarko.png",
+      "image": "heroes/Yarko.webp",
+      "thumbnail": "heroes/Yarko_thumb.webp"
+    },
+    {
+      "id": "sanko",
+      "name": "Санко",
+      "element": "earth",
+      "source_png": "Sanko.png",
+      "image": "heroes/Sanko.webp",
+      "thumbnail": "heroes/Sanko_thumb.webp"
+    },
+    {
+      "id": "turka",
+      "name": "Турка",
+      "element": "earth",
+      "source_png": "Turka.png",
+      "image": "heroes/Turka.webp",
+      "thumbnail": "heroes/Turka_thumb.webp"
+    },
+    {
+      "id": "ratsha",
+      "name": "Ратша",
+      "element": "fire",
+      "source_png": "Ratsha.png",
+      "image": "heroes/Ratsha.webp",
+      "thumbnail": "heroes/Ratsha_thumb.webp"
+    },
+    {
+      "id": "tarib",
+      "name": "Тариб",
+      "element": "fire",
+      "source_png": "Tarib.png",
+      "image": "heroes/Tarib.webp",
+      "thumbnail": "heroes/Tarib_thumb.webp"
+    },
+    {
+      "id": "iliodor",
+      "name": "Илиодор",
+      "element": "water",
+      "source_png": "Iliodor.png",
+      "image": "heroes/Iliodor.webp",
+      "thumbnail": "heroes/Iliodor_thumb.webp"
+    },
+    {
+      "id": "barnard",
+      "name": "Барнард",
+      "element": "water",
+      "source_png": "Barnard.png",
+      "image": "heroes/Barnard.webp",
+      "thumbnail": "heroes/Barnard_thumb.webp"
+    }
+  ],
+  "ui_assets": [
+    {
+      "id": "card_back",
+      "source_png": "рубашка.png",
+      "image": "ui/card_back.webp"
+    },
+    {
+      "id": "elements_reference",
+      "source_png": "памятка.png",
+      "image": "ui/elements_reference.webp"
+    }
+  ]
+}

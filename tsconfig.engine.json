@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "esModuleInterop": true,
+    "declaration": true,
+    "skipLibCheck": true,
+    "rootDir": "src/game",
+    "outDir": "dist",
+    "noEmitOnError": true
+  },
+  "include": [
+    "src/game/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

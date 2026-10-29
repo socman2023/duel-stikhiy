@@ -1,0 +1,16 @@
+node_modules/
+dist/
+dist-preview/
+coverage/
+.vite/
+.env
+.env.*
+!.env.example
+*.log
+*.tsbuildinfo
+.DS_Store
+Thumbs.db
+__pycache__/
+.pytest_cache/
+playwright-report/
+test-results/

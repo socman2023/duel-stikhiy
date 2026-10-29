@@ -1,0 +1,10 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const source=path.join(root,'dist'),dest=path.join(root,'docs');
+if(!fs.existsSync(path.join(source,'index.html')))throw new Error('Сначала npm run build: нет dist/index.html');
+fs.rmSync(dest,{recursive:true,force:true});
+fs.cpSync(source,dest,{recursive:true});
+fs.writeFileSync(path.join(dest,'.nojekyll'),'');
+console.log('Готово: docs/ обновлён из dist/. Проверь локально перед commit/push.');
