@@ -26,3 +26,67 @@
 /* Право перехода к добору принадлежит только пользователю, поэтому кнопку выделяем. */
 .draw-actions .primary-button{min-height:46px;font-size:14px}
 @media(max-width:880px){.live-stats{padding-top:11px;margin-top:11px}.live-stats h3{font-size:15px}.live-stats table{max-width:540px}.live-stats th,.live-stats td{padding:5px 3px;font-size:10px}}
+
+/* Этап 3: компактная игровая компоновка для обычного десктопа и ВК в браузере.
+   Сенсорные экраны (включая раскрытый Fold) остаются в текущем режиме до этапа 4. */
+.player-info > .player-duel-stats,.desktop-human-score{display:none}
+@media (min-width:801px) and (hover:hover){
+  .battle-wrap{display:grid;grid-template-columns:clamp(218px,27%,275px) minmax(0,1fr);
+    column-gap:12px;row-gap:10px;width:min(1210px,100%);padding:12px 16px 24px}
+  .battle-topline{grid-column:1/-1;margin:0;min-height:33px}
+  .game-layout{display:contents}
+  .opponent-section{grid-column:1;grid-row:2/4;min-width:0;padding:12px;min-height:0;align-self:stretch}
+  .opponent-section h2{margin-bottom:11px;font-size:18px}
+  .opponents{display:grid;grid-template-columns:minmax(0,1fr);gap:8px}
+  .player-badge{display:flex;flex-direction:row;text-align:left;gap:9px;min-height:72px;padding:8px;align-items:center}
+  .player-portrait{height:45px;width:45px}
+  .player-info > strong{font-size:15px}
+  .player-info > span{font-size:10px;margin-top:4px;white-space:normal}
+  .player-info > .player-duel-stats{display:block;margin-top:7px;font-size:10px;font-weight:700;
+    color:#ecd3a7;white-space:nowrap;font-variant-numeric:tabular-nums}
+  .opponent-hint{margin:12px 2px 10px;font-size:10px}
+  .desktop-human-score{display:flex;justify-content:space-between;gap:8px;align-items:baseline;
+    padding:10px 7px;border-top:1px solid #565267;font-size:11px;color:#edd4a4}
+  .desktop-human-score strong{font-family:Georgia,serif;font-weight:500;font-size:14px}
+  .desktop-human-score span{font-size:10px;font-weight:700;white-space:nowrap;font-variant-numeric:tabular-nums}
+  .opponent-section .live-stats{display:none}
+  .board-section{grid-column:2;grid-row:2;min-width:0;padding:11px}
+  .status-line{min-height:42px;padding:8px 11px}
+  .board-table{margin-top:9px;min-height:280px;padding:11px}
+  .arena-wait{min-height:194px}
+  .arena-seal{width:66px;height:66px;font-size:26px}
+  .arena-seal span{font-size:23px}
+  .arena-wait h2{font-size:22px;margin:10px 0 7px}
+  .arena-wait p{font-size:11px}
+  .duel-result{min-height:0;padding:2px 0 6px}
+  .duel-pair{gap:13px}
+  .duel-side .spell-card{width:98px;height:128px;flex-basis:98px}
+  .duel-label{font-size:13px}
+  .verdict{margin-top:9px;padding:8px 10px}
+  .verdict strong{font-size:17px}
+  .verdict span{font-size:11px}
+  .draw-actions{gap:8px}
+  .bottom-board-actions{margin:8px 2px 0}
+  .hand-section{grid-column:2;grid-row:3;margin:0;min-width:0;padding:10px 12px 12px}
+  .hand-header{padding-bottom:7px}
+  .hand-owner img{height:36px;width:36px}
+  .hand-owner strong{font-size:15px}
+  .hand-body{display:grid;grid-template-columns:1fr;gap:7px;margin-top:9px}
+  .hand-cards{display:flex;gap:7px;justify-content:center}
+  .hand-cards .spell-card{width:clamp(62px,8.5vw,92px);flex:0 1 92px}
+  .hand-action{width:100%;margin:0;display:flex;flex-direction:row;align-items:center;
+    justify-content:space-between;gap:10px}
+  .hand-action small{flex:1;font-size:10px}
+  .hand-action .primary-button{width:auto;min-height:39px;padding:9px 14px;font-size:12px;flex-shrink:0}
+  .hand-action .text-link{white-space:nowrap}
+}
+@media (min-width:801px) and (hover:hover) and (max-height:850px){
+  .site-header{min-height:62px;padding-top:8px;padding-bottom:8px}
+  .board-table{min-height:251px}
+  .arena-wait{min-height:164px}
+  .arena-wait{padding:11px 8px}
+  .arena-seal{width:55px;height:55px;font-size:23px}
+  .arena-seal span{font-size:21px}
+  .hand-cards .spell-card{width:clamp(61px,8vw,80px);flex:0 1 80px}
+  .draw-actions span{display:none}
+}
