@@ -10,6 +10,8 @@ export const VK_APP_ID = 54865222;
 export function initVkMiniApp(): void {
   const appId = new URLSearchParams(window.location.search).get('vk_app_id');
   if (!bridge.isEmbedded() && appId !== String(VK_APP_ID)) return;
+  // Помечаем встроенную версию для размещения собственных кнопок вне зоны управления ВК.
+  document.documentElement.classList.add('vk-embedded');
 
   void bridge.send('VKWebAppInit').catch((error: unknown) => {
     console.warn('VK Bridge: не удалось завершить VKWebAppInit', error);

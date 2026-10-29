@@ -90,3 +90,147 @@
   .hand-cards .spell-card{width:clamp(61px,8vw,80px);flex:0 1 80px}
   .draw-actions span{display:none}
 }
+
+/* Этап 4: мобильный VK и смартфон. Десктопные правила этапа 3 сохранены. */
+.hand-toggle,.mobile-battle-nav{display:none}
+
+/* В VK на сенсорных экранах справа от шапки расположены системные кнопки. */
+@media (hover:none){
+  .vk-embedded .site-header{padding-right:max(112px,calc(100px + env(safe-area-inset-right,0px)))}
+  .vk-embedded .site-header .header-actions{display:none}
+  .vk-embedded .brand{max-width:100%}
+  .vk-embedded .brand strong{white-space:normal}
+  .battle-tools .mobile-battle-nav{display:inline-flex;justify-content:center;align-items:center;min-height:39px}
+}
+
+/* Узкий экран: короткие соперники и счёт, компактная арена, складная рука. */
+@media (max-width:700px){
+  .home-container{padding:18px 16px 22px}
+  .home-hero{min-height:0}
+  .hero-art{height:180px;transform:scale(.51);margin:-57px 0 -46px}
+  .intro-copy h1{font-size:clamp(37px,9.2vw,51px);line-height:1.04;margin:14px 0 17px}
+  .intro-copy p{font-size:13px;line-height:1.55}
+  .intro-actions{margin:20px 0 14px;gap:9px}
+  .intro-actions .primary-button,.intro-actions .secondary-button{min-height:45px;padding:10px 15px}
+  .home-bottom{margin-top:18px;padding-top:16px}
+
+  .page-container{padding:14px 12px 25px}
+  .page-heading{margin-bottom:18px}
+  .page-heading h1{font-size:clamp(27px,8vw,36px);margin:5px 0 10px}
+  .page-heading p{line-height:1.5}
+  .hero-grid{gap:8px}
+  .setup-footer{gap:10px}
+  .setup-footer .primary-button{padding:10px 13px}
+  .settings-card{padding:14px}
+  .setting-group{padding-bottom:15px;margin-bottom:18px}
+
+  .battle-wrap{padding:9px 9px calc(86px + env(safe-area-inset-bottom,0px));max-width:640px}
+  .battle-topline{align-items:flex-start;flex-direction:column;gap:7px;margin:0 0 8px}
+  .battle-topline>div:first-child{gap:9px}
+  .battle-tools{display:flex;flex-wrap:wrap;justify-content:flex-start;gap:6px}
+  .battle-tools .tiny-button{min-height:36px;padding:7px 10px;font-size:11px}
+  .game-layout{display:block}
+  .opponent-section{padding:9px;margin-bottom:8px}
+  .opponent-section h2{font-size:16px;margin:0 0 7px}
+  .opponents{grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}
+  .player-badge{padding:6px 3px;min-height:94px;gap:3px;justify-content:center}
+  .player-portrait{width:38px;height:38px}
+  .player-info>strong{font-size:12px}
+  .player-info>span{font-size:9px;margin-top:3px}
+  .player-info>.player-duel-stats{display:block;font-size:9px;line-height:1.25;color:#ebca91;
+    font-weight:700;white-space:nowrap;font-variant-numeric:tabular-nums}
+  .opponent-hint{font-size:10px;line-height:1.3;margin:7px 2px 0}
+  .opponent-section .live-stats{display:none}
+  .desktop-human-score{display:flex;justify-content:space-between;gap:7px;align-items:baseline;
+    border-top:1px solid #4a4a59;margin-top:8px;padding:8px 2px 0;color:#eed09a;font-size:11px}
+  .desktop-human-score strong{font-family:Georgia,serif;font-weight:500}
+  .desktop-human-score span{font-size:10px;font-weight:700;white-space:nowrap;font-variant-numeric:tabular-nums}
+  .board-section{padding:9px}
+  .status-line{padding:8px 9px;min-height:40px}
+  .board-table{min-height:246px;margin-top:8px;padding:9px}
+  .arena-wait{min-height:174px;padding:10px 6px}
+  .arena-seal{height:53px;width:53px;font-size:23px}
+  .arena-seal span{font-size:19px}
+  .arena-wait h2{font-size:19px;margin:8px 0 6px}
+  .arena-wait p{font-size:11px}
+  .pending-duel{margin-top:10px}
+  .duel-pair{gap:7px}
+  .duel-side .spell-card{width:clamp(77px,27vw,106px);height:auto;aspect-ratio:3/4.1}
+  .duel-side{min-width:0}
+  .verdict{padding:8px 6px}
+  .draw-actions{padding-top:8px}
+  .draw-actions .primary-button{min-height:44px}
+
+  /* Закреплена только небольшая строка; карты открываются при необходимости. */
+  .hand-section{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:min(100%,640px);
+    z-index:12;max-height:min(69dvh,440px);overflow-y:auto;margin:0;padding:9px 11px max(10px,env(safe-area-inset-bottom,0px));
+    border-radius:15px 15px 0 0;background:#1d2332fa;box-shadow:0 -12px 30px #060912ce}
+  .hand-section.hand-collapsed .hand-body{display:none}
+  .hand-header{padding:0;border:0;gap:8px}
+  .hand-section:not(.hand-collapsed) .hand-header{border-bottom:1px solid #484b5a;padding-bottom:8px}
+  .hand-owner{gap:8px;min-width:0}
+  .hand-owner img{width:32px;height:32px}
+  .hand-owner strong{font-size:14px}
+  .hand-owner span{font-size:9px}
+  .hand-count{display:none}
+  .hand-toggle{display:block;flex-shrink:0;min-height:40px;border:1px solid #71664b9c;border-radius:9px;
+    padding:8px 10px;background:#29293a;color:#f3ddb4;font-weight:700;font-size:11px;cursor:pointer}
+  .hand-toggle:disabled{opacity:1;cursor:default;border-color:#d9b879}
+  .hand-body{display:block;margin-top:9px}
+  .hand-cards{gap:4px;justify-content:center}
+  .hand-cards .spell-card{flex:1 1 0;min-width:0;max-width:82px;width:0}
+  .hand-action{margin-top:9px;flex-wrap:wrap}
+  .hand-action .primary-button{min-height:44px}
+  .bottom-board-actions{gap:7px}
+  .bottom-board-actions .text-link{font-size:11px}
+  .site-footer{padding-bottom:max(18px,env(safe-area-inset-bottom,0px))}
+}
+@media (max-width:360px){
+  .player-info>.player-duel-stats{font-size:8px}
+  .hand-owner img{width:27px;height:27px}
+  .hand-toggle{padding:7px;font-size:10px}
+  .bottom-board-actions .text-link{font-size:10px}
+}
+
+/* Раскрытый Fold и другие достаточно широкие сенсорные окна: две колонки. */
+@media (min-width:701px) and (hover:none){
+  .battle-wrap{width:min(1180px,100%);max-width:none;display:grid;
+    grid-template-columns:clamp(190px,30%,265px) minmax(0,1fr);column-gap:10px;row-gap:9px;
+    padding:12px 14px 24px}
+  .battle-topline{grid-column:1/-1;margin-bottom:0}
+  .game-layout{display:contents}
+  .opponent-section{grid-column:1;grid-row:2/4;min-height:0;padding:11px}
+  .opponents{grid-template-columns:minmax(0,1fr);gap:8px}
+  .player-badge{display:flex;flex-direction:row;text-align:left;gap:7px;min-height:69px;padding:7px}
+  .player-portrait{width:41px;height:41px}
+  .player-info>strong{font-size:14px}
+  .player-info>span{font-size:10px;white-space:normal;margin-top:3px}
+  .player-info>.player-duel-stats{display:block;color:#ecd3a7;font-size:10px;
+    font-weight:700;white-space:nowrap;font-variant-numeric:tabular-nums}
+  .opponent-section .live-stats{display:none}
+  .opponent-hint{font-size:10px;line-height:1.3;margin:10px 0}
+  .desktop-human-score{display:flex;justify-content:space-between;align-items:baseline;gap:8px;
+    padding:9px 2px;border-top:1px solid #565267;color:#ecd3a7;font-size:11px}
+  .desktop-human-score strong{font-weight:500;font-family:Georgia,serif}
+  .desktop-human-score span{white-space:nowrap;font-weight:700;font-variant-numeric:tabular-nums;font-size:10px}
+  .board-section{grid-column:2;grid-row:2;min-width:0;padding:10px}
+  .status-line{min-height:43px;padding:9px 10px}
+  .board-table{min-height:260px;padding:10px;margin-top:8px}
+  .arena-wait{min-height:182px;padding:10px}
+  .arena-seal{width:62px;height:62px;font-size:26px}
+  .arena-seal span{font-size:22px}
+  .arena-wait h2{font-size:21px;margin:9px 0 6px}
+  .duel-result{min-height:0}
+  .duel-side .spell-card{height:125px;width:94px;flex-basis:94px}
+  .verdict{margin-top:9px;padding:8px}
+  .draw-actions{padding-top:7px}
+  .hand-section{grid-column:2;grid-row:3;position:static;margin:0;padding:10px;min-width:0}
+  .hand-body{display:block;margin-top:9px}
+  .hand-cards{gap:5px}
+  .hand-cards .spell-card{flex:1 1 0;width:0;max-width:83px;min-width:0}
+  .hand-action{display:flex;flex-direction:row;width:100%;justify-content:space-between;
+    align-items:center;gap:9px;margin-top:9px}
+  .hand-action small{flex:1;font-size:10px}
+  .hand-action .primary-button{flex-shrink:0;width:auto;min-height:40px;padding:9px 12px}
+  .battle-tools{flex-wrap:wrap}
+}
